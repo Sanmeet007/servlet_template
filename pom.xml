@@ -5,6 +5,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+
   <groupId>webapp</groupId>
   <artifactId>webapp</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -23,6 +24,20 @@
   <dependencies>
 
     <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.15.2</version>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.apache.directory.studio</groupId>
       <artifactId>org.apache.commons.codec</artifactId>
       <version>1.8</version>
@@ -35,18 +50,14 @@
       <version>3.0.0</version>
     </dependency>
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
       <version>8.0.33</version>
     </dependency>
 
+
     <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
-      <scope>provided</scope>
-    </dependency>
+
 
     <dependency>
       <groupId>junit</groupId>
@@ -57,7 +68,7 @@
   </dependencies>
 
   <build>
-    <finalName>ROOT</finalName>
+    <finalName>app</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -80,7 +91,8 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
           <configuration>
-            <outputDirectory>D:/xammp/tomcat/webapps</outputDirectory>
+            <!-- <outputDirectory>D:/xammp/tomcat/webapps</outputDirectory> -->
+            <failOnMissingWebXml>false</failOnMissingWebXml>
           </configuration>
         </plugin>
         <plugin>
