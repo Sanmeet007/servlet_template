@@ -6,3 +6,5 @@ Comes with pre-listed dependencies :
 
 - JDBC
 - Java Servlet Api
+- Jackson Databind
+- Dotenv
