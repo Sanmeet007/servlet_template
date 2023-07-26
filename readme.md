@@ -1,6 +1,6 @@
 # Servlet Template
 
-This is a servlet jsp template.
+This is a servlet jsp template project with maven.
 
 Comes with pre-listed dependencies :
 
