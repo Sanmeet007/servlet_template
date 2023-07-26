@@ -91,7 +91,6 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
           <configuration>
-            <!-- <outputDirectory>D:/xammp/tomcat/webapps</outputDirectory> -->
             <failOnMissingWebXml>false</failOnMissingWebXml>
           </configuration>
         </plugin>
