@@ -68,7 +68,7 @@
   </dependencies>
 
   <build>
-    <finalName>app</finalName>
+    <finalName>webapp</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
